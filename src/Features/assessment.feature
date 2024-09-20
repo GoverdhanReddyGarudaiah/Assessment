@@ -1,6 +1,6 @@
 Feature: This is a feature created for an assessment
 
-    #@assessment
+    @assessment
     Scenario: Q1 Broken Links Detection Automation
         Given Launch the "https://practicetestautomation.com/practice-test-login/" website
         When Get list of all links in the screen
