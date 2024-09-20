@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "listFiles": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "build",
+    "allowJs": true,
+    "removeComments": false,
+    "lib": ["es2019"],
+    "skipLibCheck": true,
+    "noStrictGenericChecks": true,
+    "esModuleInterop": true,
+    "types": ["node", "webdriverio/async", "@wdio/cucumber-framework", "expect-webdriverio"],
+    "target": "ES2019",
+    "module": "CommonJS",
+    "resolveJsonModule": true
+  }
+}

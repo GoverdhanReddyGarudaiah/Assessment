@@ -1,0 +1,70 @@
+{
+  "name": "aa",
+  "version": "1.0.0",
+  "description": "aa",
+  "main": "index.js",
+  "files": [
+    "build",
+    "run",
+    "src/Features",
+    "Reporting",
+    "config"
+  ],
+  "scripts": {
+    "lint": "eslint ./ --ext .ts",
+    "prettify": "prettify",
+    "build": "tsc",
+    "precommit": "lint-staged --allow-empty"
+  },
+  "keywords": [
+    "webdriverio",
+    "typescript",
+    "cucumber",
+    "nodeJS",
+    "expect-webdriverio",
+    "expect"
+  ],
+  "author": "GG",
+  "dependencies": {
+    "@browserstack/wdio-browserstack-service": "1.0.4",
+    "@cucumber/cucumber": "7.3.2",
+    "@wdio/cli": "7.19.7",
+    "@wdio/cucumber-framework": "7.17.3",
+    "@wdio/local-runner": "7.16.16",
+    "axios": "^1.7.7",
+    "csvtojson": "2.0.10",
+    "cucumber-html-reporter": "5.5.0",
+    "dotenv": "16.1.4",
+    "expect": "27.0.2",
+    "fs-extra": "^10.0.1",
+    "html-to-text": "^9.0.5",
+    "jszip": "^3.10.1",
+    "jszip-unzip": "^3.4.0-0",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.33",
+    "papaparse": "^5.3.2",
+    "ts-node": "10.7.0",
+    "typescript": "4.6.2",
+    "wd": "1.14.0",
+    "wdio": "6.0.1",
+    "wdio-chromedriver-service": "8.0.0",
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-cucumberjs-json-reporter": "4.4.0",
+    "wdio-json-reporter": "3.0.0",
+    "wdio-wait-for": "2.2.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.29.1",
+    "@typescript-eslint/parser": "4.29.1",
+    "eslint": "7.32.0",
+    "lint-staged": "13.0.3"
+  },
+  "optionalDependencies": {
+    "chromedriver": "latest"
+  },
+  "lint-staged": {
+    "*.{ts,js,json}": [
+      "prettify"
+    ]
+  }
+}
